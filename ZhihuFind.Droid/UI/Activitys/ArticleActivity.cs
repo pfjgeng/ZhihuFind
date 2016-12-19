@@ -180,8 +180,28 @@ namespace ZhihuFind.Droid.UI.Activitys
             if (this.article == null || this.article.Content != article.Content)
             {
                 var content = "<h1>" + article.Title + "</h1>" + article.Content;
+
+                articleContent.Settings.JavaScriptEnabled = true;
                 articleContent.Settings.CacheMode = CacheModes.CacheElseNetwork;
+                var jsInterface = new WebViewJSInterface(this);
+                articleContent.SetWebViewClient(DailyWebViewClient.With(this));
+                articleContent.AddJavascriptInterface(jsInterface, "openlistner");
                 articleContent.LoadRenderedContent(content);
+                jsInterface.CallFromPageReceived += delegate (object sender, WebViewJSInterface.CallFromPageReceivedEventArgs e)
+                {
+                    switch (e.Type)
+                    {
+                        case WebViewJSInterface.CallFromType.Image:
+                            break;
+                        case WebViewJSInterface.CallFromType.Href:
+                            Intent intent = new Intent();
+                            intent.SetAction("android.intent.action.VIEW");
+                            intent.SetData(Android.Net.Uri.Parse(e.Result));
+                            intent.SetClassName("com.android.browser", "com.android.browser.BrowserActivity");
+                            StartActivity(intent);
+                            break;
+                    }
+                };
             }
             txtTime.Text = "´´½¨ÓÚ£º" + Convert.ToDateTime(article.PublishedTime).ToString("yyyy-MM-dd");
 
