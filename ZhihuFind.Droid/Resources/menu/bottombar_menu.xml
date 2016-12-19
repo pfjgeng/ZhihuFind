@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/bb_menu_dailys"
+      android:icon="@drawable/daily_24dp"
+      android:title="日报" />
+  <item
+      android:id="@+id/bb_menu_articles"
+      android:icon="@drawable/form_24dp"
+      android:title="文章" />
+</menu>

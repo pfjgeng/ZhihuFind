@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="fab_margin">16dp</dimen>
+  
+  <dimen name="dot_width">7dp</dimen>
+  <dimen name="dot_height">7dp</dimen>
+  <dimen name="dot_marginRight">5dp</dimen>
+  
+  <dimen name="toolbar_padding_top">0dp</dimen>
+</resources>
