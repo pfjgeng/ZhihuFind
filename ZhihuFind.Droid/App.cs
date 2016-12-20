@@ -21,7 +21,7 @@ namespace ZhihuFind.Droid
         {
             base.OnCreate();
             UMShareAPI.Get(this);
-            PlatformConfig.SetWeixin("wxdad334f38b612cc7", "b3155bbdc192edf3910e6fb799e77b1f");
+            PlatformConfig.SetWeixin("wxdad334f38b612cc7", "6dfd3bc792c8fc51f6f6f0bbe037bbfd");
         }
     }
 }
