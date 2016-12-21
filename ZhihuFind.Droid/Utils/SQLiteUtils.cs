@@ -15,19 +15,52 @@ namespace ZhihuFind.Droid.Utils
         {
             public Database(string path) : base(new Func<SQLiteConnectionWithLock>(() => new SQLiteConnectionWithLock(new SQLitePlatformAndroid(), new SQLiteConnectionString(path, storeDateTimeAsTicks: false))))
             {
-                CreateTableAsync<Model.DailysImagesModel>();
-                CreateTableAsync<Model.DailyExtraModel>();
-                CreateTableAsync<Model.DailysModel>();
-                CreateTableAsync<Model.TopDailysModel>();
-                CreateTableAsync<Model.DailyModel>();
-                CreateTableAsync<Model.DailyJsModel>();
-                CreateTableAsync<Model.DailyCssModel>();
-
-                CreateTableAsync<Model.ArticleModel>();
-                CreateTableAsync<Model.AuthorModel>();
-                CreateTableAsync<Model.AvatarModel>();
+                CreateTableAsyn();
             }
+            public async void CreateTableAsyn()
+            {
+                await CreateTableAsync<Model.DailysImagesModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailysImagesModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.DailyExtraModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailyExtraModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.DailysModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailysModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.TopDailysModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create TopDailysModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.DailyModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailyModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.DailyJsModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailyJsModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.DailyCssModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create DailyCssModel Table Success");
+                });
 
+                await instance.CreateTableAsync<Model.ArticleModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create ArticleModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.AuthorModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create AuthorModel Table Success");
+                });
+                await instance.CreateTableAsync<Model.AvatarModel>().ContinueWith((results) =>
+                {
+                    Log.Error("CreateTable", "Create AvatarModel Table Success");
+                });
+            }
             #region DailysModel
             public async Task<List<ViewModel.DailysModel>> QueryAllDailys()
             {
@@ -363,7 +396,7 @@ namespace ZhihuFind.Droid.Utils
                         TitleImage = item.TitleImage,
                         Url = item.Url,
                         AuthorSlug = item.Author.Slug,
-                        UpdateTime=item.UpdateTime
+                        UpdateTime = item.UpdateTime
                     });
                 });
             }
@@ -469,20 +502,14 @@ namespace ZhihuFind.Droid.Utils
         }
 
         private static Database instance;
-        public static Database Instance
+        public static Database Instance()
         {
-            get
+            if (instance == null)
             {
-                if (instance == null)
-                {
-                    lock (typeof(Database))
-                    {
-                        string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "find.db");
-                        instance = new Database(dbPath);
-                    }
-                }
-                return instance;
+                string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "zhihufind.db");
+                instance = new Database(dbPath);
             }
+            return instance;
         }
     }
 }

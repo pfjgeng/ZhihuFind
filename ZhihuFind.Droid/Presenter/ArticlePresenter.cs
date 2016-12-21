@@ -29,7 +29,7 @@ namespace ZhihuFind.Droid.Presenter
             {
                 var article = JsonConvert.DeserializeObject<ArticleModel>(await OkHttpUtils.Instance.GetAsyn(ApiUtils.GetArticle(slug)));
                 article.UpdateTime = DateTime.Now;
-                await SQLiteUtils.Instance.UpdateArticle(article);
+                await SQLiteUtils.Instance().UpdateArticle(article);
                 articleView.GetServiceArticleSuccess(article);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace ZhihuFind.Droid.Presenter
         {
             try
             {
-                articleView.GetClientArticleSuccess(await SQLiteUtils.Instance.QueryArticle(slug));
+                articleView.GetClientArticleSuccess(await SQLiteUtils.Instance().QueryArticle(slug));
             }
             catch (Exception ex)
             {

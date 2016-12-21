@@ -29,7 +29,7 @@ namespace ZhihuFind.Droid.Presenter
             try
             {
                 var articles = JsonConvert.DeserializeObject<List<ArticleModel>>(await OkHttpUtils.Instance.GetAsyn(ApiUtils.GetRecommendationArticles(limit, offset)));
-                await SQLiteUtils.Instance.UpdateArticles(articles);
+                await SQLiteUtils.Instance().UpdateArticles(articles);
                 articlesView.GetArticlesSuccess(articles);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace ZhihuFind.Droid.Presenter
         {
             try
             {
-                articlesView.GetArticlesSuccess(await SQLiteUtils.Instance.QueryArticles(limit));
+                articlesView.GetArticlesSuccess(await SQLiteUtils.Instance().QueryArticles(limit));
             }
             catch (Exception ex)
             {

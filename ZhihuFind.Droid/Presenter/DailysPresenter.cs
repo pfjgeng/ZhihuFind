@@ -51,11 +51,11 @@ namespace ZhihuFind.Droid.Presenter
                 {
                     dailysView.GetServiceTopDailysSuccess(dailys.Top_stories);
 
-                    await SQLiteUtils.Instance.DeleteAllDailys();
-                    await SQLiteUtils.Instance.UpdateAllDailys(dailys.Stories);
+                    await SQLiteUtils.Instance().DeleteAllDailys();
+                    await SQLiteUtils.Instance().UpdateAllDailys(dailys.Stories);
 
-                    await SQLiteUtils.Instance.DeleteAllTopDailys();
-                    await SQLiteUtils.Instance.UpdateAllTopDailys(dailys.Top_stories);
+                    await SQLiteUtils.Instance().DeleteAllTopDailys();
+                    await SQLiteUtils.Instance().UpdateAllTopDailys(dailys.Top_stories);
                 }
             }
             catch (Exception ex)
@@ -67,7 +67,7 @@ namespace ZhihuFind.Droid.Presenter
         {
             try
             {
-                var dailys = await SQLiteUtils.Instance.QueryAllTopDailys();
+                var dailys = await SQLiteUtils.Instance().QueryAllTopDailys();
                 if (dailys.Count > 0)
                 {
                     dailys = dailys.OrderByDescending(d => d.Id).ToList();
@@ -80,7 +80,7 @@ namespace ZhihuFind.Droid.Presenter
             }
             try
             {
-                var dailys = await SQLiteUtils.Instance.QueryAllDailys();
+                var dailys = await SQLiteUtils.Instance().QueryAllDailys();
                 if (dailys.Count > 0)
                 {
                     dailys = dailys.OrderByDescending(d => d.Id).ToList();

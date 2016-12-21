@@ -28,7 +28,7 @@ namespace ZhihuFind.Droid.Presenter
             try
             {
                 var daily = JsonConvert.DeserializeObject<DailyModel>(await OkHttpUtils.Instance.GetAsyn(ApiUtils.GetDaily(id)));
-                await SQLiteUtils.Instance.UpdateDaily(daily);
+                await SQLiteUtils.Instance().UpdateDaily(daily);
                 dailyView.GetServiceDailySuccess(daily);
             }
             catch (Exception ex)
@@ -41,7 +41,7 @@ namespace ZhihuFind.Droid.Presenter
         {
             try
             {
-                dailyView.GetClientDailySuccess(await SQLiteUtils.Instance.QueryDaily(id));
+                dailyView.GetClientDailySuccess(await SQLiteUtils.Instance().QueryDaily(id));
             }
             catch (Exception ex)
             {
@@ -55,7 +55,7 @@ namespace ZhihuFind.Droid.Presenter
             {
                 var extra = JsonConvert.DeserializeObject<DailyExtraModel>(await OkHttpUtils.Instance.GetAsyn(ApiUtils.GetDailyExtra(id.ToString())));
                 extra.id = id;
-                await SQLiteUtils.Instance.UpdateDailyExtra(extra);
+                await SQLiteUtils.Instance().UpdateDailyExtra(extra);
                 dailyView.GetDailyExtraSuccess(extra);
             }
             catch (Exception ex)
@@ -67,7 +67,7 @@ namespace ZhihuFind.Droid.Presenter
         {
             try
             {
-                dailyView.GetDailyExtraSuccess(await SQLiteUtils.Instance.QueryDailyExtra(id));
+                dailyView.GetDailyExtraSuccess(await SQLiteUtils.Instance().QueryDailyExtra(id));
             }
             catch (Exception ex)
             {
