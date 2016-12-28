@@ -18,7 +18,7 @@ namespace ZhihuFind.Droid.UI.Views
         void GetServiceDailysFail(string msg);
         void GetServiceDailysSuccess(string date, List<DailysModel> lists);
         void GetServiceTopDailysSuccess(List<TopDailysModel> lists);
-        void GetClientDailysSuccess(string date, List<DailysModel> lists);
+        void GetClientDailysSuccess(List<DailysModel> lists);
         void GetClientTopDailysSuccess(List<TopDailysModel> lists);
     }
 }

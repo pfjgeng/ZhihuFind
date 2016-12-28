@@ -47,14 +47,17 @@ namespace ZhihuFind.Droid.UI.Widgets
         {
             base.OnPageFinished(view, url);
             view.LoadUrl("javascript:(function(){" +
-                                    "var imgs = document.getElementsByTagName(\"img\"); " +
+                                    "var imgs = document.getElementsByTagName(\"img\"); "+
+                                    "var srcs=new Array();" +
                                             "for(var i=0;i<imgs.length;i++)  " +
                                     "{"
+                                        +
+                                        "if(imgs[i].getAttribute('class')=='content-image') srcs.push(imgs[i].src);"
                                             + "    imgs[i].onclick=function()  " +
                                     "    {  "
-                                            + "        openlistner.OpenImage(this.src);  " +
-                                    "    }  " +
-                                    "}" + "var as = document.getElementsByTagName(\"a\"); " +
+                                            + "        openlistner.OpenImage(srcs.toString(),i);  " +
+                                    "    };  " +
+                                    "};" + "var as = document.getElementsByTagName(\"a\"); " +
                                             "for(var i=0;i<as.length;i++)  " +
                                     "{"
                                             + "    as[i].onclick=function()  " +

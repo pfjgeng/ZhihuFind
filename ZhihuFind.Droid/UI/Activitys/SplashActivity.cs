@@ -11,7 +11,7 @@ using ZhihuFind.Droid.UI.Views;
 
 namespace ZhihuFind.Droid.UI.Activitys
 {
-    [Activity(MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTask)]
+    [Activity(MainLauncher = true)]
     public class SplashActivity : BaseActivity, ISplashView
     {
         private ISplashPresenter splashPresenter;

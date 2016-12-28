@@ -10,4 +10,8 @@
   </style>
   <style name="SplashTheme" parent="@style/BaseAppTheme">
   </style>
+  <style name="PhotoTheme" parent="@style/BaseAppTheme">
+    <item name="colorPrimaryDark">@color/dark</item>
+    <item name="android:windowBackground">@color/dark</item>     
+  </style>
 </resources>

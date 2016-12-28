@@ -150,6 +150,7 @@ namespace ZhihuFind.Droid.UI.Activitys
                 txtTitle.Text = daily.title;
                 txtAuthor.Text = daily.image_source;
                 body.Settings.JavaScriptEnabled = true;
+                body.Settings.DomStorageEnabled = true;
                 var jsInterface = new WebViewJSInterface(this);
                 body.SetWebViewClient(DailyWebViewClient.With(this));
                 body.AddJavascriptInterface(jsInterface, "openlistner");
@@ -159,6 +160,7 @@ namespace ZhihuFind.Droid.UI.Activitys
                     switch (e.Type)
                     {
                         case WebViewJSInterface.CallFromType.Image:
+                            PhotoActivity.Start(this, e.Result.Split(','),e.Index);
                             break;
                         case WebViewJSInterface.CallFromType.Href:
                             Intent intent = new Intent();

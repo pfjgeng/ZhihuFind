@@ -24,7 +24,7 @@ namespace ZhihuFind.Droid.UI.Widgets
 
         [Java.Interop.Export]
         [JavascriptInterface]
-        public void OpenImage(string src)
+        public void OpenImage(string srcs, int index)
         {
             EventHandler<CallFromPageReceivedEventArgs> handler = CallFromPageReceived;
 
@@ -33,7 +33,8 @@ namespace ZhihuFind.Droid.UI.Widgets
                 handler(this, new CallFromPageReceivedEventArgs
                 {
                     Type = CallFromType.Image,
-                    Result = src
+                    Result = srcs,
+                    Index = index
                 });
             }
         }
@@ -48,7 +49,8 @@ namespace ZhihuFind.Droid.UI.Widgets
                 handler(this, new CallFromPageReceivedEventArgs
                 {
                     Type = CallFromType.Href,
-                    Result = href
+                    Result = href,
+                    Index = 0
                 });
             }
         }
@@ -63,6 +65,7 @@ namespace ZhihuFind.Droid.UI.Widgets
         {
             public CallFromType Type { get; set; }
             public string Result { get; set; }
+            public int Index { get; set; }
         }
     }
 }

@@ -54,19 +54,10 @@ namespace ZhihuFind.Droid.UI.Fragments
             adapter.OnLoadMoreListener = this;
 
             recyclerView.SetAdapter(adapter);
-            recyclerView.Post(() =>
-            {
-                swipeRefreshLayout.Refreshing = true;
-                OnRefresh();
-            });
-        }
-        public override async void OnResume()
-        {
-            base.OnResume();
-            if (this.date == null)
+            recyclerView.Post(async () =>
             {
                 await dailysPresenter.GetClientDailys();
-            }
+            });
         }
         public async void OnLoadMoreRequested()
         {
@@ -100,34 +91,40 @@ namespace ZhihuFind.Droid.UI.Fragments
         }
         public void GetServiceDailysSuccess(string date, List<DailysModel> lists)
         {
-            handler.Post(() =>
+            lists[0].Date = date;
+            if (this.date == null)
             {
-                lists[0].Date = date;
-                if (this.date == null)
+                if (swipeRefreshLayout.Refreshing)
                 {
-                    if (swipeRefreshLayout.Refreshing)
-                    {
-                        swipeRefreshLayout.Refreshing = false;
-                    }
-                    adapter.NewData(lists);
-                    adapter.RemoveAllFooterView();
+                    swipeRefreshLayout.Refreshing = false;
                 }
-                else
-                {
-                    adapter.AddData(lists);
-                }
-                this.date = date;
-            });
+                adapter.NewData(lists);
+                adapter.RemoveAllFooterView();
+            }
+            else
+            {
+                adapter.AddData(lists);
+            }
+            this.date = date;
         }
         public void GetClientTopDailysSuccess(List<TopDailysModel> lists)
         {
-            adapter.AddHader(lists);
-            recyclerView.SmoothScrollToPosition(0);
+            if (lists.Count > 0)
+            {
+                adapter.AddHader(lists);
+                recyclerView.SmoothScrollToPosition(0);
+            }
         }
-        public void GetClientDailysSuccess(string date, List<DailysModel> lists)
+        public void GetClientDailysSuccess(List<DailysModel> lists)
         {
-            adapter.NewData(lists);
-            adapter.RemoveAllFooterView();
+            if (lists.Count > 0)
+            {
+                adapter.NewData(lists);
+                adapter.RemoveAllFooterView();
+            }
+
+            swipeRefreshLayout.Refreshing = true;
+            OnRefresh();
         }
     }
 }

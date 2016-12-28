@@ -13,12 +13,15 @@ using BottomNavigationBar.Listeners;
 using Com.Umeng.Analytics;
 using Android.Support.Design.Widget;
 using Android.Content;
+using Com.Iflytek.Autoupdate;
+using System;
 
 namespace ZhihuFind.Droid.UI.Activitys
 {
     [Activity(LaunchMode = Android.Content.PM.LaunchMode.SingleTask)]
-    public class MainActivity : BaseActivity, IMainView, IOnMenuTabClickListener
+    public class MainActivity : BaseActivity, IMainView, IOnMenuTabClickListener, IFlytekUpdateListener
     {
+        private Handler handler;
         private Toolbar toolbar;
         private BottomBar bottomBar;
         private int lastSelecteID;//上一次选中的menuItemId
@@ -26,6 +29,7 @@ namespace ZhihuFind.Droid.UI.Activitys
         private ArticlesFragment articleaFragment;
         private DailysFragment dailysFragment;
         private IMainPresenter mainPresenter;
+        private IFlytekUpdate updManager;
 
         public static void Start(Context context)
         {
@@ -39,6 +43,7 @@ namespace ZhihuFind.Droid.UI.Activitys
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
+            handler = new Handler();
             mainPresenter = new MainPresenter(this);
 
             toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
@@ -57,6 +62,13 @@ namespace ZhihuFind.Droid.UI.Activitys
             MobclickAgent.SetDebugMode(true);
             MobclickAgent.OpenActivityDurationTrack(false);
             MobclickAgent.SetScenarioType(this, MobclickAgent.EScenarioType.EUmNormal);
+
+            updManager = IFlytekUpdate.GetInstance(this);
+            updManager.SetDebugMode(true);
+            updManager.SetParameter(UpdateConstants.ExtraWifionly, "true");
+            updManager.SetParameter(UpdateConstants.ExtraNotiIcon, "true");
+            updManager.SetParameter(UpdateConstants.ExtraStyle, UpdateConstants.UpdateUiDialog);
+            updManager.AutoUpdate(this, this);
         }
         protected override void OnSaveInstanceState(Bundle outState)
         {
@@ -107,7 +119,6 @@ namespace ZhihuFind.Droid.UI.Activitys
             toolbar.Title = Resources.GetString(Resource.String.article);
         }
 
-
         public void HideDailys()
         {
             FragmentTransaction transaction = fm.BeginTransaction();
@@ -126,6 +137,24 @@ namespace ZhihuFind.Droid.UI.Activitys
             }
         }
 
+        public void OnResult(int errorcode, UpdateInfo result)
+        {
+            handler.Post(() =>
+            {
+                if (errorcode == UpdateErrorCode.Ok && result != null)
+                {
+                    if (result.UpdateType == UpdateType.NoNeed)
+                    {
+                        return;
+                    }
+                    updManager.ShowUpdateInfo(this, result);
+                }
+                else
+                {
+                    Toast.MakeText(this, "请求更新失败！\n更新错误码：" + errorcode, ToastLength.Short).Show();
+                }
+            });
+        }
     }
 }
 

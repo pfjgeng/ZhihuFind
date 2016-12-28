@@ -77,21 +77,29 @@ namespace ZhihuFind.Droid.Utils
                     {
                         vImages.Add(i.Images);
                     }
-                    vDailys.Add(new ViewModel.DailysModel()
+                    var daily = new ViewModel.DailysModel()
                     {
                         Id = item.Id,
                         Date = item.Date,
                         Ga_prefix = item.Ga_prefix,
                         Title = item.Title,
-                        Images = vImages,
-                        extra = new ViewModel.DailyExtraModel()
+                        Images = vImages
+                    };
+                    if (extras != null)
+                    {
+                        daily.extra = new ViewModel.DailyExtraModel()
                         {
                             comments = extras.comments,
                             long_comments = extras.long_comments,
                             popularity = extras.popularity,
                             short_comments = extras.short_comments
-                        }
-                    });
+                        };
+                    }
+                    else
+                    {
+                        daily.extra = new ViewModel.DailyExtraModel();
+                    }
+                    vDailys.Add(daily);
                 }
                 return vDailys;
             }
@@ -117,6 +125,7 @@ namespace ZhihuFind.Droid.Utils
                     //添加其他信息
                     if (item.extra != null)
                     {
+                        item.extra.id = item.Id;
                         await UpdateDailyExtra(item.extra);
                     }
                     //主信息

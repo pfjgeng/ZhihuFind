@@ -192,6 +192,7 @@ namespace ZhihuFind.Droid.UI.Activitys
                     switch (e.Type)
                     {
                         case WebViewJSInterface.CallFromType.Image:
+                            PhotoActivity.Start(this, e.Result.Split(','), e.Index);
                             break;
                         case WebViewJSInterface.CallFromType.Href:
                             Intent intent = new Intent();

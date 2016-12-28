@@ -3026,35 +3026,35 @@ namespace ZhihuFind.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f080060
-			public const int abc_background_cache_hint_selector_material_dark = 2131230816;
-			
 			// aapt resource value: 0x7f080061
-			public const int abc_background_cache_hint_selector_material_light = 2131230817;
+			public const int abc_background_cache_hint_selector_material_dark = 2131230817;
 			
 			// aapt resource value: 0x7f080062
-			public const int abc_btn_colored_borderless_text_material = 2131230818;
+			public const int abc_background_cache_hint_selector_material_light = 2131230818;
 			
 			// aapt resource value: 0x7f080063
-			public const int abc_color_highlight_material = 2131230819;
+			public const int abc_btn_colored_borderless_text_material = 2131230819;
+			
+			// aapt resource value: 0x7f080064
+			public const int abc_color_highlight_material = 2131230820;
 			
 			// aapt resource value: 0x7f080004
 			public const int abc_input_method_navigation_guard = 2131230724;
 			
-			// aapt resource value: 0x7f080064
-			public const int abc_primary_text_disable_only_material_dark = 2131230820;
-			
 			// aapt resource value: 0x7f080065
-			public const int abc_primary_text_disable_only_material_light = 2131230821;
+			public const int abc_primary_text_disable_only_material_dark = 2131230821;
 			
 			// aapt resource value: 0x7f080066
-			public const int abc_primary_text_material_dark = 2131230822;
+			public const int abc_primary_text_disable_only_material_light = 2131230822;
 			
 			// aapt resource value: 0x7f080067
-			public const int abc_primary_text_material_light = 2131230823;
+			public const int abc_primary_text_material_dark = 2131230823;
 			
 			// aapt resource value: 0x7f080068
-			public const int abc_search_url_text = 2131230824;
+			public const int abc_primary_text_material_light = 2131230824;
+			
+			// aapt resource value: 0x7f080069
+			public const int abc_search_url_text = 2131230825;
 			
 			// aapt resource value: 0x7f080005
 			public const int abc_search_url_text_normal = 2131230725;
@@ -3065,32 +3065,32 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f080007
 			public const int abc_search_url_text_selected = 2131230727;
 			
-			// aapt resource value: 0x7f080069
-			public const int abc_secondary_text_material_dark = 2131230825;
-			
 			// aapt resource value: 0x7f08006a
-			public const int abc_secondary_text_material_light = 2131230826;
+			public const int abc_secondary_text_material_dark = 2131230826;
 			
 			// aapt resource value: 0x7f08006b
-			public const int abc_tint_btn_checkable = 2131230827;
+			public const int abc_secondary_text_material_light = 2131230827;
 			
 			// aapt resource value: 0x7f08006c
-			public const int abc_tint_default = 2131230828;
+			public const int abc_tint_btn_checkable = 2131230828;
 			
 			// aapt resource value: 0x7f08006d
-			public const int abc_tint_edittext = 2131230829;
+			public const int abc_tint_default = 2131230829;
 			
 			// aapt resource value: 0x7f08006e
-			public const int abc_tint_seek_thumb = 2131230830;
+			public const int abc_tint_edittext = 2131230830;
 			
 			// aapt resource value: 0x7f08006f
-			public const int abc_tint_spinner = 2131230831;
+			public const int abc_tint_seek_thumb = 2131230831;
 			
 			// aapt resource value: 0x7f080070
-			public const int abc_tint_switch_thumb = 2131230832;
+			public const int abc_tint_spinner = 2131230832;
 			
 			// aapt resource value: 0x7f080071
-			public const int abc_tint_switch_track = 2131230833;
+			public const int abc_tint_switch_thumb = 2131230833;
+			
+			// aapt resource value: 0x7f080072
+			public const int abc_tint_switch_track = 2131230834;
 			
 			// aapt resource value: 0x7f080008
 			public const int accent_material_dark = 2131230728;
@@ -3161,8 +3161,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f080003
 			public const int cardview_shadow_start_color = 2131230723;
 			
-			// aapt resource value: 0x7f080072
-			public const int design_error = 2131230834;
+			// aapt resource value: 0x7f08005f
+			public const int dark = 2131230815;
+			
+			// aapt resource value: 0x7f080073
+			public const int design_error = 2131230835;
 			
 			// aapt resource value: 0x7f08003e
 			public const int design_fab_shadow_end_color = 2131230782;
@@ -3194,8 +3197,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f080047
 			public const int design_textinput_error_color_light = 2131230791;
 			
-			// aapt resource value: 0x7f080073
-			public const int design_tint_password_toggle = 2131230835;
+			// aapt resource value: 0x7f080074
+			public const int design_tint_password_toggle = 2131230836;
 			
 			// aapt resource value: 0x7f080016
 			public const int dim_foreground_disabled_material_dark = 2131230742;
@@ -3215,8 +3218,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f08001b
 			public const int foreground_material_light = 2131230747;
 			
-			// aapt resource value: 0x7f08005f
-			public const int gainsboro = 2131230815;
+			// aapt resource value: 0x7f080060
+			public const int gainsboro = 2131230816;
 			
 			// aapt resource value: 0x7f08001c
 			public const int highlighted_text_material_dark = 2131230748;
@@ -3323,11 +3326,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f08003b
 			public const int switch_thumb_disabled_material_light = 2131230779;
 			
-			// aapt resource value: 0x7f080074
-			public const int switch_thumb_material_dark = 2131230836;
-			
 			// aapt resource value: 0x7f080075
-			public const int switch_thumb_material_light = 2131230837;
+			public const int switch_thumb_material_dark = 2131230837;
+			
+			// aapt resource value: 0x7f080076
+			public const int switch_thumb_material_light = 2131230838;
 			
 			// aapt resource value: 0x7f08003c
 			public const int switch_thumb_normal_material_dark = 2131230780;
@@ -4193,8 +4196,8 @@ namespace ZhihuFind.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0600a1
-			public const int action0 = 2131099809;
+			// aapt resource value: 0x7f0600a5
+			public const int action0 = 2131099813;
 			
 			// aapt resource value: 0x7f06005e
 			public const int action_bar = 2131099742;
@@ -4220,8 +4223,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06005f
 			public const int action_context_bar = 2131099743;
 			
-			// aapt resource value: 0x7f0600a5
-			public const int action_divider = 2131099813;
+			// aapt resource value: 0x7f0600a9
+			public const int action_divider = 2131099817;
 			
 			// aapt resource value: 0x7f060003
 			public const int action_menu_divider = 2131099651;
@@ -4256,65 +4259,65 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06006e
 			public const int appbar = 2131099758;
 			
-			// aapt resource value: 0x7f060090
-			public const int author = 2131099792;
+			// aapt resource value: 0x7f060094
+			public const int author = 2131099796;
 			
 			// aapt resource value: 0x7f06002b
 			public const int auto = 2131099691;
 			
-			// aapt resource value: 0x7f06008e
-			public const int avatar = 2131099790;
-			
-			// aapt resource value: 0x7f060084
-			public const int bb_bottom_bar_background_overlay = 2131099780;
-			
-			// aapt resource value: 0x7f060083
-			public const int bb_bottom_bar_background_view = 2131099779;
-			
-			// aapt resource value: 0x7f060087
-			public const int bb_bottom_bar_icon = 2131099783;
-			
-			// aapt resource value: 0x7f060085
-			public const int bb_bottom_bar_item_container = 2131099781;
-			
-			// aapt resource value: 0x7f060081
-			public const int bb_bottom_bar_outer_container = 2131099777;
-			
-			// aapt resource value: 0x7f060082
-			public const int bb_bottom_bar_shadow = 2131099778;
+			// aapt resource value: 0x7f060092
+			public const int avatar = 2131099794;
 			
 			// aapt resource value: 0x7f060088
-			public const int bb_bottom_bar_title = 2131099784;
+			public const int bb_bottom_bar_background_overlay = 2131099784;
 			
-			// aapt resource value: 0x7f0600cf
-			public const int bb_menu_articles = 2131099855;
+			// aapt resource value: 0x7f060087
+			public const int bb_bottom_bar_background_view = 2131099783;
 			
-			// aapt resource value: 0x7f0600ce
-			public const int bb_menu_dailys = 2131099854;
+			// aapt resource value: 0x7f06008b
+			public const int bb_bottom_bar_icon = 2131099787;
+			
+			// aapt resource value: 0x7f060089
+			public const int bb_bottom_bar_item_container = 2131099785;
+			
+			// aapt resource value: 0x7f060085
+			public const int bb_bottom_bar_outer_container = 2131099781;
 			
 			// aapt resource value: 0x7f060086
-			public const int bb_tablet_right_border = 2131099782;
+			public const int bb_bottom_bar_shadow = 2131099782;
 			
-			// aapt resource value: 0x7f060080
-			public const int bb_user_content_container = 2131099776;
+			// aapt resource value: 0x7f06008c
+			public const int bb_bottom_bar_title = 2131099788;
+			
+			// aapt resource value: 0x7f0600d6
+			public const int bb_menu_articles = 2131099862;
+			
+			// aapt resource value: 0x7f0600d5
+			public const int bb_menu_dailys = 2131099861;
+			
+			// aapt resource value: 0x7f06008a
+			public const int bb_tablet_right_border = 2131099786;
+			
+			// aapt resource value: 0x7f060084
+			public const int bb_user_content_container = 2131099780;
 			
 			// aapt resource value: 0x7f06001c
 			public const int beginning = 2131099676;
 			
-			// aapt resource value: 0x7f060094
-			public const int body = 2131099796;
+			// aapt resource value: 0x7f060098
+			public const int body = 2131099800;
 			
 			// aapt resource value: 0x7f060024
 			public const int bottom = 2131099684;
 			
-			// aapt resource value: 0x7f060089
-			public const int bottom_container = 2131099785;
+			// aapt resource value: 0x7f06008d
+			public const int bottom_container = 2131099789;
 			
 			// aapt resource value: 0x7f060047
 			public const int buttonPanel = 2131099719;
 			
-			// aapt resource value: 0x7f0600a2
-			public const int cancel_action = 2131099810;
+			// aapt resource value: 0x7f0600a6
+			public const int cancel_action = 2131099814;
 			
 			// aapt resource value: 0x7f06002c
 			public const int center = 2131099692;
@@ -4328,8 +4331,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060055
 			public const int checkbox = 2131099733;
 			
-			// aapt resource value: 0x7f0600a8
-			public const int chronometer = 2131099816;
+			// aapt resource value: 0x7f0600ac
+			public const int chronometer = 2131099820;
 			
 			// aapt resource value: 0x7f060035
 			public const int clip_horizontal = 2131099701;
@@ -4343,17 +4346,20 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06006f
 			public const int collapsingtoolbar = 2131099759;
 			
-			// aapt resource value: 0x7f060092
-			public const int content = 2131099794;
+			// aapt resource value: 0x7f060096
+			public const int content = 2131099798;
 			
 			// aapt resource value: 0x7f06004d
 			public const int contentPanel = 2131099725;
 			
-			// aapt resource value: 0x7f06008c
-			public const int coordinatorLayout = 2131099788;
+			// aapt resource value: 0x7f060090
+			public const int coordinatorLayout = 2131099792;
 			
-			// aapt resource value: 0x7f060093
-			public const int createAt = 2131099795;
+			// aapt resource value: 0x7f0600b3
+			public const int count = 2131099827;
+			
+			// aapt resource value: 0x7f060097
+			public const int createAt = 2131099799;
 			
 			// aapt resource value: 0x7f060053
 			public const int custom = 2131099731;
@@ -4367,20 +4373,20 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060043
 			public const int default_activity_button = 2131099715;
 			
-			// aapt resource value: 0x7f060097
-			public const int design_bottom_sheet = 2131099799;
-			
-			// aapt resource value: 0x7f06009e
-			public const int design_menu_item_action_area = 2131099806;
-			
-			// aapt resource value: 0x7f06009d
-			public const int design_menu_item_action_area_stub = 2131099805;
-			
-			// aapt resource value: 0x7f06009c
-			public const int design_menu_item_text = 2131099804;
-			
 			// aapt resource value: 0x7f06009b
-			public const int design_navigation_view = 2131099803;
+			public const int design_bottom_sheet = 2131099803;
+			
+			// aapt resource value: 0x7f0600a2
+			public const int design_menu_item_action_area = 2131099810;
+			
+			// aapt resource value: 0x7f0600a1
+			public const int design_menu_item_action_area_stub = 2131099809;
+			
+			// aapt resource value: 0x7f0600a0
+			public const int design_menu_item_text = 2131099808;
+			
+			// aapt resource value: 0x7f06009f
+			public const int design_navigation_view = 2131099807;
 			
 			// aapt resource value: 0x7f06000e
 			public const int disableHome = 2131099662;
@@ -4391,8 +4397,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06001d
 			public const int end = 2131099677;
 			
-			// aapt resource value: 0x7f0600ad
-			public const int end_padder = 2131099821;
+			// aapt resource value: 0x7f0600b1
+			public const int end_padder = 2131099825;
 			
 			// aapt resource value: 0x7f060026
 			public const int enterAlways = 2131099686;
@@ -4421,8 +4427,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06003b
 			public const int @fixed = 2131099707;
 			
-			// aapt resource value: 0x7f0600a0
-			public const int frameContent = 2131099808;
+			// aapt resource value: 0x7f0600a4
+			public const int frameContent = 2131099812;
 			
 			// aapt resource value: 0x7f060005
 			public const int home = 2131099653;
@@ -4436,11 +4442,26 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060021
 			public const int ifRoom = 2131099681;
 			
+			// aapt resource value: 0x7f060080
+			public const int ifltek_cancel = 2131099776;
+			
+			// aapt resource value: 0x7f060081
+			public const int ifltek_sure = 2131099777;
+			
+			// aapt resource value: 0x7f06007f
+			public const int iflytek_update_content = 2131099775;
+			
+			// aapt resource value: 0x7f06007e
+			public const int iflytek_update_title = 2131099774;
+			
 			// aapt resource value: 0x7f060042
 			public const int image = 2131099714;
 			
-			// aapt resource value: 0x7f0600ac
-			public const int info = 2131099820;
+			// aapt resource value: 0x7f0600b2
+			public const int index = 2131099826;
+			
+			// aapt resource value: 0x7f0600b0
+			public const int info = 2131099824;
 			
 			// aapt resource value: 0x7f060000
 			public const int item_touch_helper_previous_elevation = 2131099648;
@@ -4448,17 +4469,17 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060075
 			public const int layoutAuthor = 2131099765;
 			
-			// aapt resource value: 0x7f06007f
-			public const int layoutDotlist = 2131099775;
+			// aapt resource value: 0x7f060083
+			public const int layoutDotlist = 2131099779;
 			
 			// aapt resource value: 0x7f060030
 			public const int left = 2131099696;
 			
-			// aapt resource value: 0x7f0600a6
-			public const int line1 = 2131099814;
-			
 			// aapt resource value: 0x7f0600aa
-			public const int line3 = 2131099818;
+			public const int line1 = 2131099818;
+			
+			// aapt resource value: 0x7f0600ae
+			public const int line3 = 2131099822;
 			
 			// aapt resource value: 0x7f06000b
 			public const int listMode = 2131099659;
@@ -4469,20 +4490,20 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060074
 			public const int llAvatar = 2131099764;
 			
-			// aapt resource value: 0x7f0600ae
-			public const int loading_progress = 2131099822;
+			// aapt resource value: 0x7f0600b5
+			public const int loading_progress = 2131099829;
 			
-			// aapt resource value: 0x7f0600af
-			public const int loading_text = 2131099823;
+			// aapt resource value: 0x7f0600b6
+			public const int loading_text = 2131099830;
 			
-			// aapt resource value: 0x7f0600b0
-			public const int loading_view = 2131099824;
+			// aapt resource value: 0x7f0600b7
+			public const int loading_view = 2131099831;
 			
 			// aapt resource value: 0x7f06006d
 			public const int main_content = 2131099757;
 			
-			// aapt resource value: 0x7f0600a4
-			public const int media_actions = 2131099812;
+			// aapt resource value: 0x7f0600a8
+			public const int media_actions = 2131099816;
 			
 			// aapt resource value: 0x7f06001e
 			public const int middle = 2131099678;
@@ -4493,8 +4514,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060016
 			public const int multiply = 2131099670;
 			
-			// aapt resource value: 0x7f06009a
-			public const int navigation_header_container = 2131099802;
+			// aapt resource value: 0x7f06009e
+			public const int navigation_header_container = 2131099806;
 			
 			// aapt resource value: 0x7f060022
 			public const int never = 2131099682;
@@ -4514,14 +4535,17 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060049
 			public const int parentPanel = 2131099721;
 			
+			// aapt resource value: 0x7f0600b4
+			public const int photo = 2131099828;
+			
 			// aapt resource value: 0x7f060034
 			public const int pin = 2131099700;
 			
 			// aapt resource value: 0x7f060079
 			public const int postContent = 2131099769;
 			
-			// aapt resource value: 0x7f0600b6
-			public const int progress_bar_parent = 2131099830;
+			// aapt resource value: 0x7f0600bd
+			public const int progress_bar_parent = 2131099837;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -4532,11 +4556,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060057
 			public const int radio = 2131099735;
 			
-			// aapt resource value: 0x7f06008d
-			public const int recyclerView = 2131099789;
+			// aapt resource value: 0x7f060091
+			public const int recyclerView = 2131099793;
 			
-			// aapt resource value: 0x7f06008f
-			public const int relativeLayout = 2131099791;
+			// aapt resource value: 0x7f060093
+			public const int relativeLayout = 2131099795;
 			
 			// aapt resource value: 0x7f060031
 			public const int right = 2131099697;
@@ -4592,8 +4616,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06006c
 			public const int select_dialog_listview = 2131099756;
 			
-			// aapt resource value: 0x7f0600d0
-			public const int share = 2131099856;
+			// aapt resource value: 0x7f0600d7
+			public const int share = 2131099863;
 			
 			// aapt resource value: 0x7f060056
 			public const int shortcut = 2131099734;
@@ -4607,11 +4631,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060013
 			public const int showTitle = 2131099667;
 			
-			// aapt resource value: 0x7f060099
-			public const int snackbar_action = 2131099801;
+			// aapt resource value: 0x7f06009d
+			public const int snackbar_action = 2131099805;
 			
-			// aapt resource value: 0x7f060098
-			public const int snackbar_text = 2131099800;
+			// aapt resource value: 0x7f06009c
+			public const int snackbar_text = 2131099804;
 			
 			// aapt resource value: 0x7f06002a
 			public const int snap = 2131099690;
@@ -4634,11 +4658,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060032
 			public const int start = 2131099698;
 			
-			// aapt resource value: 0x7f0600b1
-			public const int startImage = 2131099825;
+			// aapt resource value: 0x7f0600b8
+			public const int startImage = 2131099832;
 			
-			// aapt resource value: 0x7f0600a3
-			public const int status_bar_latest_event_content = 2131099811;
+			// aapt resource value: 0x7f0600a7
+			public const int status_bar_latest_event_content = 2131099815;
 			
 			// aapt resource value: 0x7f060058
 			public const int submenuarrow = 2131099736;
@@ -4652,20 +4676,20 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06000d
 			public const int tabMode = 2131099661;
 			
-			// aapt resource value: 0x7f0600ab
-			public const int text = 2131099819;
+			// aapt resource value: 0x7f0600af
+			public const int text = 2131099823;
 			
-			// aapt resource value: 0x7f0600a9
-			public const int text2 = 2131099817;
+			// aapt resource value: 0x7f0600ad
+			public const int text2 = 2131099821;
 			
 			// aapt resource value: 0x7f060050
 			public const int textSpacerNoButtons = 2131099728;
 			
-			// aapt resource value: 0x7f06009f
-			public const int text_input_password_toggle = 2131099807;
+			// aapt resource value: 0x7f0600a3
+			public const int text_input_password_toggle = 2131099811;
 			
-			// aapt resource value: 0x7f0600a7
-			public const int time = 2131099815;
+			// aapt resource value: 0x7f0600ab
+			public const int time = 2131099819;
 			
 			// aapt resource value: 0x7f060046
 			public const int title = 2131099718;
@@ -4688,8 +4712,8 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06004a
 			public const int topPanel = 2131099722;
 			
-			// aapt resource value: 0x7f060096
-			public const int touch_outside = 2131099798;
+			// aapt resource value: 0x7f06009a
+			public const int touch_outside = 2131099802;
 			
 			// aapt resource value: 0x7f060076
 			public const int txtAuthor = 2131099766;
@@ -4697,14 +4721,14 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f060078
 			public const int txtBio = 2131099768;
 			
-			// aapt resource value: 0x7f06008b
-			public const int txtComments = 2131099787;
+			// aapt resource value: 0x7f06008f
+			public const int txtComments = 2131099791;
 			
-			// aapt resource value: 0x7f060095
-			public const int txtDate = 2131099797;
+			// aapt resource value: 0x7f060099
+			public const int txtDate = 2131099801;
 			
-			// aapt resource value: 0x7f06008a
-			public const int txtGood = 2131099786;
+			// aapt resource value: 0x7f06008e
+			public const int txtGood = 2131099790;
 			
 			// aapt resource value: 0x7f06007b
 			public const int txtName = 2131099771;
@@ -4718,89 +4742,89 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06007c
 			public const int txtTitle = 2131099772;
 			
-			// aapt resource value: 0x7f0600b3
-			public const int umeng_socialize_follow = 2131099827;
-			
-			// aapt resource value: 0x7f0600b4
-			public const int umeng_socialize_follow_check = 2131099828;
-			
 			// aapt resource value: 0x7f0600ba
-			public const int umeng_socialize_follow_layout = 2131099834;
-			
-			// aapt resource value: 0x7f0600bc
-			public const int umeng_socialize_location_ic = 2131099836;
-			
-			// aapt resource value: 0x7f0600bd
-			public const int umeng_socialize_location_progressbar = 2131099837;
-			
-			// aapt resource value: 0x7f0600be
-			public const int umeng_socialize_share_at = 2131099838;
-			
-			// aapt resource value: 0x7f0600b9
-			public const int umeng_socialize_share_bottom_area = 2131099833;
-			
-			// aapt resource value: 0x7f0600c3
-			public const int umeng_socialize_share_edittext = 2131099843;
-			
-			// aapt resource value: 0x7f0600bf
-			public const int umeng_socialize_share_image = 2131099839;
+			public const int umeng_socialize_follow = 2131099834;
 			
 			// aapt resource value: 0x7f0600bb
-			public const int umeng_socialize_share_location = 2131099835;
-			
-			// aapt resource value: 0x7f0600c0
-			public const int umeng_socialize_share_previewImg = 2131099840;
-			
-			// aapt resource value: 0x7f0600c2
-			public const int umeng_socialize_share_previewImg_progressbar = 2131099842;
+			public const int umeng_socialize_follow_check = 2131099835;
 			
 			// aapt resource value: 0x7f0600c1
-			public const int umeng_socialize_share_previewImg_remove = 2131099841;
+			public const int umeng_socialize_follow_layout = 2131099841;
 			
-			// aapt resource value: 0x7f0600b7
-			public const int umeng_socialize_share_root = 2131099831;
-			
-			// aapt resource value: 0x7f0600b8
-			public const int umeng_socialize_share_titlebar = 2131099832;
+			// aapt resource value: 0x7f0600c3
+			public const int umeng_socialize_location_ic = 2131099843;
 			
 			// aapt resource value: 0x7f0600c4
-			public const int umeng_socialize_share_word_num = 2131099844;
+			public const int umeng_socialize_location_progressbar = 2131099844;
 			
 			// aapt resource value: 0x7f0600c5
-			public const int umeng_socialize_shareboard_image = 2131099845;
+			public const int umeng_socialize_share_at = 2131099845;
 			
-			// aapt resource value: 0x7f0600c6
-			public const int umeng_socialize_shareboard_pltform_name = 2131099846;
-			
-			// aapt resource value: 0x7f0600c7
-			public const int umeng_socialize_title_bar_leftBt = 2131099847;
-			
-			// aapt resource value: 0x7f0600c8
-			public const int umeng_socialize_title_bar_middleTv = 2131099848;
-			
-			// aapt resource value: 0x7f0600c9
-			public const int umeng_socialize_title_bar_middle_tab = 2131099849;
-			
-			// aapt resource value: 0x7f0600cc
-			public const int umeng_socialize_title_bar_rightBt = 2131099852;
-			
-			// aapt resource value: 0x7f0600cd
-			public const int umeng_socialize_title_bar_rightBt_progress = 2131099853;
+			// aapt resource value: 0x7f0600c0
+			public const int umeng_socialize_share_bottom_area = 2131099840;
 			
 			// aapt resource value: 0x7f0600ca
-			public const int umeng_socialize_title_middle_left = 2131099850;
+			public const int umeng_socialize_share_edittext = 2131099850;
+			
+			// aapt resource value: 0x7f0600c6
+			public const int umeng_socialize_share_image = 2131099846;
+			
+			// aapt resource value: 0x7f0600c2
+			public const int umeng_socialize_share_location = 2131099842;
+			
+			// aapt resource value: 0x7f0600c7
+			public const int umeng_socialize_share_previewImg = 2131099847;
+			
+			// aapt resource value: 0x7f0600c9
+			public const int umeng_socialize_share_previewImg_progressbar = 2131099849;
+			
+			// aapt resource value: 0x7f0600c8
+			public const int umeng_socialize_share_previewImg_remove = 2131099848;
+			
+			// aapt resource value: 0x7f0600be
+			public const int umeng_socialize_share_root = 2131099838;
+			
+			// aapt resource value: 0x7f0600bf
+			public const int umeng_socialize_share_titlebar = 2131099839;
 			
 			// aapt resource value: 0x7f0600cb
-			public const int umeng_socialize_title_middle_right = 2131099851;
+			public const int umeng_socialize_share_word_num = 2131099851;
 			
-			// aapt resource value: 0x7f0600b2
-			public const int umeng_socialize_titlebar = 2131099826;
+			// aapt resource value: 0x7f0600cc
+			public const int umeng_socialize_shareboard_image = 2131099852;
+			
+			// aapt resource value: 0x7f0600cd
+			public const int umeng_socialize_shareboard_pltform_name = 2131099853;
+			
+			// aapt resource value: 0x7f0600ce
+			public const int umeng_socialize_title_bar_leftBt = 2131099854;
+			
+			// aapt resource value: 0x7f0600cf
+			public const int umeng_socialize_title_bar_middleTv = 2131099855;
+			
+			// aapt resource value: 0x7f0600d0
+			public const int umeng_socialize_title_bar_middle_tab = 2131099856;
+			
+			// aapt resource value: 0x7f0600d3
+			public const int umeng_socialize_title_bar_rightBt = 2131099859;
+			
+			// aapt resource value: 0x7f0600d4
+			public const int umeng_socialize_title_bar_rightBt_progress = 2131099860;
+			
+			// aapt resource value: 0x7f0600d1
+			public const int umeng_socialize_title_middle_left = 2131099857;
+			
+			// aapt resource value: 0x7f0600d2
+			public const int umeng_socialize_title_middle_right = 2131099858;
+			
+			// aapt resource value: 0x7f0600b9
+			public const int umeng_socialize_titlebar = 2131099833;
 			
 			// aapt resource value: 0x7f060009
 			public const int up = 2131099657;
 			
-			// aapt resource value: 0x7f060091
-			public const int upCount = 2131099793;
+			// aapt resource value: 0x7f060095
+			public const int upCount = 2131099797;
 			
 			// aapt resource value: 0x7f060014
 			public const int useLogo = 2131099668;
@@ -4808,11 +4832,11 @@ namespace ZhihuFind.Droid
 			// aapt resource value: 0x7f06000a
 			public const int view_offset_helper = 2131099658;
 			
-			// aapt resource value: 0x7f06007e
-			public const int viewpager = 2131099774;
+			// aapt resource value: 0x7f060082
+			public const int viewpager = 2131099778;
 			
-			// aapt resource value: 0x7f0600b5
-			public const int webView = 2131099829;
+			// aapt resource value: 0x7f0600bc
+			public const int webView = 2131099836;
 			
 			// aapt resource value: 0x7f060023
 			public const int withText = 2131099683;
@@ -4952,148 +4976,157 @@ namespace ZhihuFind.Droid
 			public const int articles_item = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int banner = 2130903068;
+			public const int autoupdate_dialog_layout = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int banner_item = 2130903069;
+			public const int banner = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int bb_bottom_bar_item_container = 2130903070;
+			public const int banner_item = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int bb_bottom_bar_item_container_tablet = 2130903071;
+			public const int bb_bottom_bar_item_container = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int bb_bottom_bar_item_fixed = 2130903072;
+			public const int bb_bottom_bar_item_container_tablet = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int bb_bottom_bar_item_fixed_tablet = 2130903073;
+			public const int bb_bottom_bar_item_fixed = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int bb_bottom_bar_item_shifting = 2130903074;
+			public const int bb_bottom_bar_item_fixed_tablet = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int bottom = 2130903075;
+			public const int bb_bottom_bar_item_shifting = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int comment = 2130903076;
+			public const int bottom = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int comment_item = 2130903077;
+			public const int comment = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int daily = 2130903078;
+			public const int comment_item = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int dailys_item = 2130903079;
+			public const int daily = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int design_bottom_sheet_dialog = 2130903080;
+			public const int dailys_item = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int design_layout_snackbar = 2130903081;
+			public const int design_bottom_sheet_dialog = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int design_layout_snackbar_include = 2130903082;
+			public const int design_layout_snackbar = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int design_layout_tab_icon = 2130903083;
+			public const int design_layout_snackbar_include = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int design_layout_tab_text = 2130903084;
+			public const int design_layout_tab_icon = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int design_menu_item_action_area = 2130903085;
+			public const int design_layout_tab_text = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int design_navigation_item = 2130903086;
+			public const int design_menu_item_action_area = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int design_navigation_item_header = 2130903087;
+			public const int design_navigation_item = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int design_navigation_item_separator = 2130903088;
+			public const int design_navigation_item_header = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int design_navigation_item_subheader = 2130903089;
+			public const int design_navigation_item_separator = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int design_navigation_menu = 2130903090;
+			public const int design_navigation_item_subheader = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int design_navigation_menu_item = 2130903091;
+			public const int design_navigation_menu = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int design_text_input_password_icon = 2130903092;
+			public const int design_navigation_menu_item = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int fragment_articles = 2130903093;
+			public const int design_text_input_password_icon = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int fragment_dailys = 2130903094;
+			public const int fragment_articles = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int Main = 2130903095;
+			public const int fragment_dailys = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_media_action = 2130903096;
+			public const int Main = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_media_cancel_action = 2130903097;
+			public const int notification_media_action = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_big_media = 2130903098;
+			public const int notification_media_cancel_action = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_big_media_narrow = 2130903099;
+			public const int notification_template_big_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_lines = 2130903100;
+			public const int notification_template_big_media_narrow = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_media = 2130903101;
+			public const int notification_template_lines = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_part_chronometer = 2130903102;
+			public const int notification_template_media = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int notification_template_part_time = 2130903103;
+			public const int notification_template_part_chronometer = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int recyclerview_loadmore = 2130903104;
+			public const int notification_template_part_time = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int recyclerview_loadmore_failed = 2130903105;
+			public const int photo = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int recyclerview_notloading = 2130903106;
+			public const int photo_item = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int select_dialog_item_material = 2130903107;
+			public const int recyclerview_loadmore = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int select_dialog_multichoice_material = 2130903108;
+			public const int recyclerview_loadmore_failed = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int select_dialog_singlechoice_material = 2130903109;
+			public const int recyclerview_notloading = 2130903109;
 			
 			// aapt resource value: 0x7f030046
-			public const int splash = 2130903110;
+			public const int select_dialog_item_material = 2130903110;
 			
 			// aapt resource value: 0x7f030047
-			public const int support_simple_spinner_dropdown_item = 2130903111;
+			public const int select_dialog_multichoice_material = 2130903111;
 			
 			// aapt resource value: 0x7f030048
-			public const int umeng_socialize_oauth_dialog = 2130903112;
+			public const int select_dialog_singlechoice_material = 2130903112;
 			
 			// aapt resource value: 0x7f030049
-			public const int umeng_socialize_post_share = 2130903113;
+			public const int splash = 2130903113;
 			
 			// aapt resource value: 0x7f03004a
-			public const int umeng_socialize_shareboard_item = 2130903114;
+			public const int support_simple_spinner_dropdown_item = 2130903114;
 			
 			// aapt resource value: 0x7f03004b
-			public const int umeng_socialize_titile_bar = 2130903115;
+			public const int umeng_socialize_oauth_dialog = 2130903115;
+			
+			// aapt resource value: 0x7f03004c
+			public const int umeng_socialize_post_share = 2130903116;
+			
+			// aapt resource value: 0x7f03004d
+			public const int umeng_socialize_shareboard_item = 2130903117;
+			
+			// aapt resource value: 0x7f03004e
+			public const int umeng_socialize_titile_bar = 2130903118;
 			
 			static Layout()
 			{
@@ -6057,6 +6090,9 @@ namespace ZhihuFind.Droid
 			
 			// aapt resource value: 0x7f070003
 			public const int CardView_Light = 2131165187;
+			
+			// aapt resource value: 0x7f070182
+			public const int PhotoTheme = 2131165570;
 			
 			// aapt resource value: 0x7f07001d
 			public const int Platform_AppCompat = 2131165213;

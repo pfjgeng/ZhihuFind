@@ -22,7 +22,7 @@ using ZhihuFind.Droid.UI.Listeners;
 
 namespace ZhihuFind.Droid.UI.Activitys
 {
-    [Activity(Label = "@string/comments")]
+    [Activity(Label = "@string/comments", LaunchMode = Android.Content.PM.LaunchMode.SingleTask)]
     public class DailyCommentActivity : BaseActivity, View.IOnClickListener, IDailyCommentView, IOnLoadMoreListener, SwipeRefreshLayout.IOnRefreshListener
     {
         private string id;

@@ -39,6 +39,7 @@ namespace ZhihuFind.Droid.Presenter
                         await Task.Run(async () =>
                          {
                              var extra = JsonConvert.DeserializeObject<DailyExtraModel>(await OkHttpUtils.Instance.GetAsyn(ApiUtils.GetDailyExtra(item.Id.ToString())));
+
                              item.extra = extra;
                          });
                     }
@@ -65,32 +66,13 @@ namespace ZhihuFind.Droid.Presenter
         }
         public async Task GetClientDailys()
         {
-            try
-            {
-                var dailys = await SQLiteUtils.Instance().QueryAllTopDailys();
-                if (dailys.Count > 0)
-                {
-                    dailys = dailys.OrderByDescending(d => d.Id).ToList();
-                    dailysView.GetClientTopDailysSuccess(dailys);
-                }
-            }
-            catch (Exception)
-            {
+            var topdailys = await SQLiteUtils.Instance().QueryAllTopDailys();
+            topdailys = topdailys.OrderByDescending(d => d.Id).ToList();
+            dailysView.GetClientTopDailysSuccess(topdailys);
 
-            }
-            try
-            {
-                var dailys = await SQLiteUtils.Instance().QueryAllDailys();
-                if (dailys.Count > 0)
-                {
-                    dailys = dailys.OrderByDescending(d => d.Id).ToList();
-                    dailysView.GetClientDailysSuccess(dailys[0].Date, dailys);
-                }
-            }
-            catch (Exception)
-            {
-
-            }
+            var dailys = await SQLiteUtils.Instance().QueryAllDailys();
+            dailys = dailys.OrderByDescending(d => d.Id).ToList();
+            dailysView.GetClientDailysSuccess(dailys);
         }
         public class DailysModel
         {

@@ -8,5 +8,6 @@
   <color name="title_color">#212121</color>
   <color name="subtitle_color">#929ea5</color>
   <color name="white">#FFFFFF</color>
+  <color name="dark">#212121</color>
   <color name="gainsboro">#ebe8eb</color>
 </resources>
