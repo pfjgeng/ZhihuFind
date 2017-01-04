@@ -23,19 +23,19 @@ namespace ZhihuFind.IOS
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method           
 
-            UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.Default;
+            //UIApplication.SharedApplication.StatusBarStyle = UIStatusBarStyle.Default;
 
-            // create our window
-            Window = new UIWindow(UIScreen.MainScreen.Bounds);
+            //// create our window
+            //Window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-            navController = new UINavigationController();
-            tabBarController = new TabBarController();
-            navController.PushViewController(tabBarController, false);
+            //navController = new UINavigationController();
+            //tabBarController = new TabBarController();
+            //navController.PushViewController(tabBarController, false);
 
-            // add the nav controller to the window
-            Window.RootViewController = navController;
+            //// add the nav controller to the window
+            //Window.RootViewController = navController;
 
-            Window.MakeKeyAndVisible();
+            //Window.MakeKeyAndVisible();
             return true;
         }
 
