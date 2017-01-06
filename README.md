@@ -2,7 +2,7 @@
 集合了知乎日报今日热闻,知乎精选文章推荐。只需每天三次,每次十五分钟,及时获取知乎热门新闻动态。内容来源于知乎官方,内容版权归知乎([Zhihu.inc](https://www.zhihu.com/))所有.
 
 # 安卓版
-[应用宝下载](http://android.myapp.com/myapp/detail.htm?apkName=com.zhihufind.android)
+[下载](https://github.com/i-1213/ZhihuFind/blob/master/com.zhihufind.android.apk)
 
 # 截图
 ![ZhihuFind](https://github.com/i-1213/ZhihuFind/tree/master/ZhihuFind/screenshots/find1.png)
@@ -15,6 +15,9 @@
 - [Square.OkHttp](https://github.com/mattleibow/square-bindings)
 - [Square.Picasso](https://github.com/mattleibow/square-bindings)
 - [BottomNavigationBar](https://github.com/pocheshire/BottomNavigationBar)
+- [FFImageLoading](https://github.com/luberda-molinet/FFImageLoading)
+- [SQLite.Net-PCL](https://github.com/oysteinkrog/SQLite.Net-PCL)
+- [PhotoView](https://github.com/chrisbanes/PhotoView)
 
 # 反馈
 qiaoqiao0630#163.com(#替换成@)
