@@ -11,11 +11,8 @@ using UIKit;
 
 namespace ZhihuFind.IOS
 {
-    [Register ("TabBarController")]
-    partial class TabBarController
+    [Register ("DailysTableView")]
+    partial class DailysTableView
     {
-        void ReleaseDesignerOutlets ()
-        {
-        }
     }
 }

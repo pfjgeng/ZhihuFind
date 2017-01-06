@@ -1,3 +1,4 @@
+using Foundation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,5 @@ namespace ZhihuFind.IOS.Controllers
 {
     public class ArticlesTableViewController : UITableViewController
     {
-
     }
 }

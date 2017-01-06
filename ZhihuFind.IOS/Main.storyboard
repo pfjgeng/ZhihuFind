@@ -9,7 +9,7 @@
         <scene sceneID="76">
             <objects>
                 <tabBarController id="77" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="80" customClass="TabBarController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="80">
                         <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -25,19 +25,59 @@
         </scene>
         <scene sceneID="87">
             <objects>
-                <tableViewController id="88" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="90">
+                <tableViewController id="88" sceneMemberID="viewController" customClass="DailysViewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="90" opaque="NO" clearsContextBeforeDrawing="NO" customClass="DailysTableView" restorationIdentifier="DailysTable">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="93">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="0" id="93" customClass="DailysTableCell" rowHeight="68" reuseIdentifier="DailysCell" indentationLevel="1">
+                                <rect key="frame" x="0.0" y="28" width="600" height="68"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="93" id="94">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="67.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="971" translatesAutoresizingMaskIntoConstraints="NO">
+                                            <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint id="1008" firstAttribute="width" constant="50"/>
+                                                <constraint id="1009" firstAttribute="height" constant="50"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="988" translatesAutoresizingMaskIntoConstraints="NO" text="Title" clipsSubviews="YES">
+                                            <rect key="frame" x="89" y="10" width="491" height="21"/>
+                                            <color key="highlightedColor" colorSpace="calibratedRGB" red="0" green="0" blue="0" alpha="1"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" colorSpace="calibratedWhite" white="0" alpha="1"/>
+                                            <constraints>
+                                                <constraint id="993" firstAttribute="height" constant="21"/>
+                                            </constraints>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" id="1016" translatesAutoresizingMaskIntoConstraints="NO" minimumFontSize="10" numberOfLines="20">
+                                            <rect key="frame" x="89" y="32" width="491" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint id="990" firstItem="94" firstAttribute="trailing" secondItem="988" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="991" firstItem="988" firstAttribute="top" secondItem="94" secondAttribute="top" constant="10"/>
+                                        <constraint id="996" firstItem="988" firstAttribute="top" secondItem="94" secondAttribute="top" constant="10"/>
+                                        <constraint id="1006" firstItem="971" firstAttribute="leading" secondItem="94" secondAttribute="leading" constant="10"/>
+                                        <constraint id="1010" firstItem="971" firstAttribute="top" secondItem="94" secondAttribute="top" constant="10"/>
+                                        <constraint id="1013" firstItem="988" firstAttribute="leading" secondItem="971" secondAttribute="trailing" constant="29"/>
+                                        <constraint id="1017" firstItem="94" firstAttribute="trailing" secondItem="1016" secondAttribute="trailing" constant="20"/>
+                                        <constraint id="1018" firstItem="94" firstAttribute="bottom" secondItem="1016" secondAttribute="bottom" constant="14"/>
+                                        <constraint id="1021" firstItem="1016" firstAttribute="leading" secondItem="971" secondAttribute="trailing" constant="29"/>
+                                        <constraint id="1022" firstItem="1016" firstAttribute="top" secondItem="988" secondAttribute="centerY" constant="11"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="CellImage" destination="971" id="name-outlet-971"/>
+                                    <outlet property="CellTitle" destination="988" id="name-outlet-988"/>
+                                    <outlet property="CellDescription" destination="1016" id="name-outlet-1016"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -45,11 +85,11 @@
                             <outlet property="delegate" destination="88" id="92"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="89"/>
+                    <navigationItem key="navigationItem" id="89" title="日报"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="-1171"/>
+            <point key="canvasLocation" x="-468" y="-1161"/>
         </scene>
         <scene sceneID="96">
             <objects>
@@ -89,11 +129,11 @@
                             <outlet property="delegate" destination="239" id="243"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="240"/>
+                    <navigationItem key="navigationItem" title="文章" id="240"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="246" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-301" y="-351"/>
+            <point key="canvasLocation" x="-471" y="-355"/>
         </scene>
         <scene sceneID="247">
             <objects>
@@ -117,7 +157,33 @@
         <image name="Icon-Small-40.png" width="40" height="40"/>
         <image name="Icon-Small.png" width="29" height="29"/>
         <image name="Icon.png" width="57" height="57"/>
-        <image name="Images/daily.png" width="29" height="29"/>
         <image name="Images/form.png" width="29" height="29"/>
+        <image name="Images/Macintosh_128k.png" width="300" height="352"/>
+        <image name="Images/Macintosh_512K.png" width="300" height="188"/>
+        <image name="Images/Macintosh_Classic.jpg" width="220" height="188"/>
+        <image name="Images/Macintosh_Classic_2.jpg" width="300" height="317"/>
+        <image name="Images/Macintosh_Color_Classic.jpg" width="300" height="300"/>
+        <image name="Images/Macintosh_LC.jpg" width="300" height="225"/>
+        <image name="Images/MacIntosh_Plus.jpg" width="300" height="200"/>
+        <image name="Images/Macintosh_Portable.jpg" width="300" height="200"/>
+        <image name="Images/Macintosh_SE.jpg" width="300" height="311"/>
+        <image name="Images/Power_Macintosh.jpg" width="220" height="165"/>
+        <image name="Images/Powerbook_150.jpg" width="220" height="211"/>
+        <image name="Images/SE30.jpg" width="300" height="311"/>
+        <image name="MacII.jpg" width="300" height="242"/>
+        <image name="Macintosh_128k.png" width="300" height="352"/>
+        <image name="Macintosh_512K.png" width="300" height="188"/>
+        <image name="Macintosh_Classic.jpg" width="220" height="188"/>
+        <image name="Macintosh_Classic_2.jpg" width="300" height="317"/>
+        <image name="Macintosh_Color_Classic.jpg" width="300" height="300"/>
+        <image name="Macintosh_LC.jpg" width="300" height="225"/>
+        <image name="MacIntosh_Plus.jpg" width="300" height="200"/>
+        <image name="Macintosh_Portable.jpg" width="300" height="200"/>
+        <image name="Macintosh_SE.jpg" width="300" height="311"/>
+        <image name="Power_Macintosh.jpg" width="220" height="165"/>
+        <image name="Powerbook_150.jpg" width="220" height="211"/>
+        <image name="SE30.jpg" width="300" height="311"/>
+        <image name="daily.png" width="29" height="29"/>
+        <image name="form.png" width="29" height="29"/>
     </resources>
 </document>

@@ -84,20 +84,31 @@
     <CodesignKey>iPhone Distribution</CodesignKey>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classes\GrowItem.cs" />
+    <Compile Include="Classes\GrowRowTableDataSource.cs" />
+    <Compile Include="Classes\GrowRowTableDelegate.cs" />
     <Compile Include="Controllers\ArticlesTableViewController.cs" />
-    <Compile Include="Controllers\DailysTableViewController.cs" />
+    <Compile Include="DailysTableCell.cs" />
+    <Compile Include="DailysTableCell.designer.cs">
+      <DependentUpon>DailysTableCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailysTableView.cs" />
+    <Compile Include="DailysTableView.designer.cs">
+      <DependentUpon>DailysTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailysViewController.cs" />
+    <Compile Include="DailysViewController.designer.cs">
+      <DependentUpon>DailysViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="TabBarController.cs" />
-    <Compile Include="TabBarController.designer.cs">
-      <DependentUpon>TabBarController.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Utils\ApiUtils.cs" />
+    <Compile Include="Utils\DateTimeUtils.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\TabBarController.cs" />
     <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
   </ItemGroup>
@@ -115,11 +126,26 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small-40%402x.png" />
     <BundleResource Include="Resources\Icon.png" />
-    <BundleResource Include="Images\daily.png" />
-    <BundleResource Include="Images\daily%402x.png" />
-    <BundleResource Include="Images\form.png" />
-    <BundleResource Include="Images\form%402x.png" />
+    <BundleResource Include="Resources\daily.png" />
+    <BundleResource Include="Resources\daily%402x.png" />
+    <BundleResource Include="Resources\form.png" />
+    <BundleResource Include="Resources\form%402x.png" />
+    <BundleResource Include="Resources\Macintosh_SE.jpg" />
+    <BundleResource Include="Resources\Power_Macintosh.jpg" />
+    <BundleResource Include="Resources\Powerbook_150.jpg" />
+    <BundleResource Include="Resources\SE30.jpg" />
+    <BundleResource Include="Resources\MacII.jpg" />
+    <BundleResource Include="Resources\Macintosh_128k.png" />
+    <BundleResource Include="Resources\Macintosh_512K.png" />
+    <BundleResource Include="Resources\Macintosh_Classic.jpg" />
+    <BundleResource Include="Resources\Macintosh_Classic_2.jpg" />
+    <BundleResource Include="Resources\Macintosh_Color_Classic.jpg" />
+    <BundleResource Include="Resources\Macintosh_LC.jpg" />
+    <BundleResource Include="Resources\MacIntosh_Plus.jpg" />
+    <BundleResource Include="Resources\Macintosh_Portable.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
